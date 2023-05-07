@@ -1,0 +1,12 @@
+services:
+  redis:
+    image: redis:5
+    ports:
+      - '6379:6379'
+  
+  web: 
+    build:
+      context: therapist
+      target: builder
+    ports: 
+      - '8000:8000'
