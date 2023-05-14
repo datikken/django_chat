@@ -2,13 +2,14 @@ version: '3'
 
 services:
   redis:
-    image: redis:6.2-alpine
+    image: redis:5
     ports:
       - '6379:6379'
   
   web: 
     build:
-      context: ./therapist
+      context: therapist
+      target: builder
     volumes:
       - ./therapist:/app
     ports: 
