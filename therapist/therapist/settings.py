@@ -28,7 +28,7 @@ SECRET_KEY = 'django-insecure-_d7te&#+yo#4-tq29^$4ovk!u^*1d0)@aeoo8%er7vi)5h^a5+
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 # Application definition
 ASGI_APPLICATION = "therapist.asgi.application"
