@@ -9,6 +9,7 @@ services:
   web: 
     build:
       context: therapist
+    command: daphne -b 0.0.0.0 -p 8000 therapist.asgi:application
     volumes:
       - ./therapist:/app
     ports: 
