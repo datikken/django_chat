@@ -6,7 +6,7 @@ services:
   
   web: 
     build:
-      context: therapist
+      context: ./therapist
     volumes:
       - ./therapist:/app
     ports: 
