@@ -8,6 +8,7 @@
 </head>
 <body>
     <form action="{% url 'send_file' %}" method="POST">
+        {{ form.as_p }}
         <button type="submit">Submit</button>
     </form>
 </body>
