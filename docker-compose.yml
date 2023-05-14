@@ -9,7 +9,6 @@ services:
   web: 
     build:
       context: therapist
-      target: builder
     volumes:
       - ./therapist:/app
     ports: 
